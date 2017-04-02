@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<script
+	  src="https://code.jquery.com/jquery-1.12.4.min.js"
+	  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+	  crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<script>
+		$(function(){
+			$(".trigger").on('click',function(){
+				$(".trigger").toggleClass("active")
+			})
+		});			
+	</script>
+	<title>Document</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.wrapper .trigger,
+		.trigger span{
+			display: inline-block;
+			transition: all .4s;
+			box-sizing: border-box;
+			background: #000;
+		}
+		.wrapper .trigger{
+			position: relative;
+			width: 100px;
+			height: 100px;
+		}
+		.trigger span{
+			left: 0;
+			width: 100%;
+			height: 4px;
+			background-color: #fff;
+			border-radius: 4px;
+			position: absolute;
+		}
+		.trigger span:nth-of-type(1){
+		top: 25px
+		}
+		.trigger span:nth-of-type(2){
+			top: 45px;
+		}
+		.trigger span:nth-of-type(3){
+			bottom: 30px;
+		}
+
+
+		.trigger.active span:nth-of-type(1) {
+			-webkit-transform: translateY(20px) rotate(-225deg);
+			transform: translateY(20px) rotate(-225deg);
+		}
+		.trigger.active span:nth-of-type(2) {
+			opacity: 0;
+		}
+		.trigger.active span:nth-of-type(3) {
+			-webkit-transform: translateY(-20px) rotate(405deg);
+			transform: translateY(-20px) rotate(405deg);
+		}
+	</style>
+</head>
+<body>
+<div class="wrapper">
+	<a href="#" class="trigger">
+		<span></span>
+		<span></span>
+		<span></span>
+	</a>
+</div>
+</body>
+</html>

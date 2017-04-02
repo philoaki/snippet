@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		#three{
+			height: 2000px;
+			background: red ;
+			font-size: 70px;
+		}
+		.b_w{
+			background: #fff;
+		}
+	</style>
+	<script>
+
+	window.addEventListener('load',function(){
+		var three = document.getElementById('three');
+		var vh = three.defaultView;
+		var yy = document.defaultView.getComputedStyle(three,null);
+		console.log(yy);
+		var users = document.getElementById('users');
+		console.log(users)
+		three.addEventListener("click", function(){
+		if(document.defaultView.getComputedStyle(three, null).fontSize == "16px") {
+		three.style.fontSize = "30px";
+		three.style.color = "#fff";
+		} else {
+		three.style.fontSize = "16px";
+		three.style.color = "#000";
+		}
+		}, false);
+	});
+	</script>
+
+</head>
+<body>
+<div class="wrapper">
+<a id="users">【ユーザーのOS情報】</a>
+<div>1</div>
+<div>2</div>
+<div id="three" class="b_w">3</div>
+<div>4</div>
+<div id="output">5</div>
+</div><!-- wrapper -->
+</body>
+</html>

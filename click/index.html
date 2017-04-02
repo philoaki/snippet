@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>click</title>
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+<a href="#" class="hum">
+<span></span>
+<span></span>
+<span></span>
+</a><!--hum-->
+<div class="wrapper">
+<header><h1>header</h1></header>
+<nav>
+	<ul>
+		<li><a href="#">home</a></li>
+		<li><a href="#">about</a></li>
+		<li><a href="#">products</a></li>
+		<li><a href="#">contact</a></li>
+	</ul>
+</nav>
+<main></main>
+<footer>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex iusto quis illo reprehenderit, optio esse aliquam recusandae eum error, autem aperiam ullam qui deleniti officia nobis magni, explicabo voluptates ut!</p>
+</footer>
+<div id="test"></div>
+</div><!-- /.wrapper -->
+	<script
+	  src="https://code.jquery.com/jquery-1.12.4.js"
+	  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+	  crossorigin="anonymous"></script>
+	  <script>
+	  	$(function(){
+	  		$('.hum').on('click',function(){
+	  			$('nav ul').toggleClass('open');	
+	  		});
+	  	})
+	  </script>
+
+ 
+</body>
+</html>

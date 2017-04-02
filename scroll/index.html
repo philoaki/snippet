@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>snippet!</title>
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script
+	  src="https://code.jquery.com/jquery-1.12.4.js"
+	  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+	  crossorigin="anonymous"></script>
+<!-- 	<script>
+			$(window).on('load scroll',function(){
+				var scrollPosition = $(window).scrollTop();
+				var hed = $('h1').innerHeight()+ 20;
+				var f_offset = $("footer").offset().top;
+				
+				console.log(f_offset);
+				console.log(scrollPosition + hed);
+
+				if (scrollPosition + hed <= $("footer").offset().top) {
+				  $('h1').attr('style', '');
+				}else{
+					$('h1').css({
+			        position: 'absolute',
+			        top: 'auto',
+			        bottom: 0
+			      });
+				}
+			});
+	</script> -->
+	<script>
+
+			window.scroll=function(){
+				var scrollPosition = window.scrollTop();
+				console.log(scrollPosition);
+			}
+	</script>
+</head>
+
+<body>
+<div class="wrapper">
+<header><h1>header</h1></header>
+<main>
+<div class="contents">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit explicabo, sit adipisci fuga odit ipsum aliquam sint minus impedit temporibus debitis nesciunt cumque natus eius totam illum facilis nam velit.</div>
+</main>
+</div><!-- /.wrapper -->
+<footer>
+<ul>
+	<li><a href="#">Lorem ipsum dolor.</a></li>
+	<li><a href="#">Lorem ipsum dolor.</a></li>
+	<li><a href="#">Lorem ipsum dolor.</a></li>
+	<li><a href="#">Lorem ipsum dolor.</a></li>
+	<li><a href="#">Lorem ipsum dolor.</a></li>
+</ul>
+</footer>
+</body>
+</html>

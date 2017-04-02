@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>3点</title>
+	<style>
+		.esp{
+			position: relative;
+			height: 40px;
+			overflow: hidden;
+			line-height: 20px;
+
+		}
+		.esp:before,.esp:after{
+			position: absolute;
+			background: #eee;
+		}
+
+		.esp:after{
+			content: "";
+			width: 100%;
+			height: 100%;
+
+		}
+		.esp:before{
+			content: "...";
+			bottom: 0;
+			right: 0;
+		}
+	</style>
+</head>
+<body>
+<div class="wrapper">
+<p class="esp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dicta. Perspiciatis consectetur non in repellendus ratione officiis voluptatum, quisquam, tenetur consequuntur aliquam, alias excepturi! Placeat non quia numquam tempora quaerat </p>
+
+
+
+</div><!-- wrapper -->
+</body>
+</html>

@@ -1,0 +1,31 @@
+@charset "utf-8";
+.wrapper {
+	position: relative;
+	display: table;
+}
+.wrapper header{
+	display: table-cell;
+	width: 200px;
+}
+.wrapper header h1 {
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	background: #333;
+}
+.wrapper .contents{
+	height: 6000px;
+	background: #999;
+}
+footer{
+	height: 1500px;
+	background: #666;
+}
+footer ul{
+	width: 900px;
+	margin: 0 auto;
+}
